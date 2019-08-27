@@ -42,6 +42,7 @@ public class App {
 
 			em.getTransaction().commit();
 
+			// test du dao, probleme en mode create, drop les tables
 			Dao<Agency, Long> agencyDao = new Dao(Agency.class);
 			System.out.println(agencyDao.findByid(1L));
 			System.out.println(agencyDao.findAll());
